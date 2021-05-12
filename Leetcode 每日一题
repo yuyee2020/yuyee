@@ -1,0 +1,12 @@
+# 两数之和
+target=eval(input())
+nums=eval(input())
+nums=list(nums)
+a=len(nums)
+for i in range(a):
+    for j in range(i+1,a):
+        if nums[i]+nums[j]==target:
+            print("[{},{}]".format(i,j))
+        break
+
+        
